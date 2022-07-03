@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
     --bg-black-900:#f2f2fc;
@@ -17,7 +17,7 @@ body.dark{
 body{
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'poppins' sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 *{
     margin: 0;
@@ -133,7 +133,7 @@ ul{
     position: relative;
 }
 .aside .logo a span{
-    font-family: 'Clicker Script', 'cursive';
+    font-family: 'Great Vibes', cursive;
     font-size: 40px;
 } 
 .aside .logo a::before{
@@ -248,9 +248,10 @@ h3.hello{
     margin: 15px 0;
 }
 h3.hello span{
-    font-family: 'Clicker Script' , cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: 30px;
     font-weight: 700;
+    letter-spacing: 2px;
     color: var(--skin-color);
 }
 h3.my-profession{
@@ -273,6 +274,7 @@ h3.my-profession{
 }
 .home .home-img img{
     height: 350px;
+    width: 220px;
     margin: auto;
     border-radius: 5px;
 }
@@ -582,6 +584,12 @@ h3.my-profession{
     display: block;
 }
 /* portfolio  */
+/* vedio */
+.portfolio .portfolio-item-inner .portfolio-vedio video{
+    width: 100%;
+    display: block;
+}
+/* vedio */
 /* contact */
 .contact-title{
     font-size: 25px;
@@ -677,6 +685,21 @@ h3.my-profession{
     .home .home-img{
         display: none;
     }
+    .home{
+        background-image: linear-gradient(to bottom, rgba(124, 124, 4, 0.582), rgba(0,0,255,0.5)),
+        url(image/ism3.png);
+    }
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home h3.hello,
+    .home h3.my-profession,
+    .home-info p{
+        color: #fdf9ff;
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
 
 @media (max-width:768px) {
@@ -716,6 +739,11 @@ h3.my-profession{
         display: block;
         margin-left: 0;
     }
+    .home{
+        background-image: linear-gradient(to bottom, rgba(124, 124, 4, 0.582), rgba(0,0,255,0.5)),
+        url(image/ism2.png);
+    }
+    
 }
 /* Responsi */
 
@@ -728,6 +756,13 @@ h3.my-profession{
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .home h3.hello,
+    .home h3.my-profession,
+    .home-info p{
+        color: #fdf9ff;
+        padding-top: 0;
+        margin-top: 0;
     }
 }
 @media (max-width:400px) {
